@@ -7,5 +7,5 @@ Add hotkey for Ubuntu with command
 
 # Links
 
-https://github.com/kumakichi/Deepl-linux-electron
-https://www.deepl.com/translator
+- https://github.com/kumakichi/Deepl-linux-electron
+- https://www.deepl.com/translator
