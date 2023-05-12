@@ -1,3 +1,8 @@
+## Base info
+
+The script is based on Deepl-linux-electron: https://github.com/kumakichi/Deepl-linux-electron
+The shortcut for the programm must be deafult: `Control_L+Shift_L+F9`.
+
 ## Installation
 
 Add hotkey in Ubuntu `Settings > Keyboard > Custom Shortcuts`. Bind the command for desired hotkey, for example `Shift+F1`: 
@@ -22,5 +27,4 @@ xdotool
 
 ## Links
 
-- https://github.com/kumakichi/Deepl-linux-electron
 - https://www.deepl.com/translator
