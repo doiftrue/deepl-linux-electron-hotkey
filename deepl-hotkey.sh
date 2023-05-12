@@ -16,6 +16,7 @@ xdotool keyup Control_L Shift_L Alt_L
 BASEDIR=$(dirname "$0")
 active_window=$(xdotool getwindowfocus) # maybe getactivewindow
 active_window_name=$(cat /proc/"$(xdotool getwindowpid "$active_window")"/comm)
+#notify-send "active_window_name: $active_window_name"
 
 # Hotkey of deepl-electron program
 deepl_call_hotkey="Control_L+Shift_L+F9"
@@ -28,8 +29,7 @@ prev_win_id_file="$BASEDIR/.caller_win_id"
 #echo "$active_window_name" >> "$debugfile"
 
 # inside deepl window
-if [[ $active_window_name == *deepl* ]]
-then
+if [[ $active_window_name == *deepl* ]]; then
 
 	#deepl_window=$(xdotool getwindowfocus)
 
@@ -37,7 +37,7 @@ then
 	sleep 0.1
 	data=$(xsel)
 
-	#notify-send 'aaaaaaaaaaaaaaaa'
+	#notify-send 'Inside deepl'
 
 	# change data
 	#printf %s "$data" | sed 's/\n``(\w+)\n/\n```\\1\n/g'
@@ -59,6 +59,7 @@ then
 
 # not deepl window
 else
+	#notify-send 'not deepl window'
 
 	# save the identifier of the previous window
 	printf "%d" "$active_window" > "$prev_win_id_file"

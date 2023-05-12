@@ -1,15 +1,26 @@
-# Installation
+## Installation
 
-This app required `libfuse2` lib. Install it if the app not works:
+Add hotkey in Ubuntu `Settings > Keyboard > Custom Shortcuts`. Bind the command for desired hotkey, for example `Shift+F1`: 
 
-	sudo apt install libfuse2
-
-Add hotkey for Ubuntu with command 
-	
-	sh /home/kama/Programs/deepl/deepl-hotkey.sh 
+    bash /home/kama/Programs/deepl/deepl-hotkey.sh
 
 
-# Links
+## Dependencies
+
+For the script works correctly you need install the following packeges:
+
+g3kb-switch: https://github.com/lyokha/g3kb-switch
+libfuse2
+xsel
+xdotool
+
+    sudo apt-get update
+    sudo apt install libfuse2 -y
+    sudo apt-get install xsel -y
+    sudo apt-get install xdotool -y
+
+
+## Links
 
 - https://github.com/kumakichi/Deepl-linux-electron
 - https://www.deepl.com/translator
