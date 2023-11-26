@@ -1,13 +1,38 @@
-## Base info
+Base info
+---------
 
 The script is based on Deepl-linux-electron: https://github.com/kumakichi/Deepl-linux-electron
 The shortcut for the programm must be deafult: `Control_L+Shift_L+F9`.
 
-## Installation
 
-Add hotkey in Ubuntu `Settings > Keyboard > Custom Shortcuts`. Bind the command for desired hotkey, for example `Shift+F1`: 
+Installation
+------------
 
+### Instal the programm itself (for Ubuntu)
+
+1. Enshure that `Deepl-Linux-Electron.AppImage` file is executable.
+2. Create `~/.local/share/applications/deepl.desktop` file with the following code:
+    ```
+    [Desktop Entry]
+    Comment=Deepl Linux Electron
+    Exec=/home/kama/Programs/deepl/Deepl-Linux-Electron.AppImage
+    GenericName=Deepl-Linux-Electron
+    Name=Deepl Linux Electron
+    Type=Application
+    Categories=Education;
+    Icon=/home/kama/Programs/deepl/tray-icon.svg
+    Keywords=Deepl;Translator;translate;Language
+    ```
+3. Add Startup application for ubuntu. Set up the following command `gtk-launch deepl`. deepl refers to `deepl.desktop`.
+
+
+### Setup hotkey (for Ubuntu)
+
+1. Open `Settings > Keyboard > Keyboard Shortcuts > Custom Shortcuts`.
+2. Bind the following command for desired hotkey. For example `Shift+F1`: 
+    ```
     bash /home/kama/Programs/deepl/deepl-hotkey.sh
+    ```
 
 
 ## Dependencies

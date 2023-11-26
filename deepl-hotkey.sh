@@ -33,8 +33,7 @@ if [[ $active_window_name == *deepl* ]]; then
 
 	#deepl_window=$(xdotool getwindowfocus)
 
-	xdotool key "Control_L+a"
-	sleep 0.1
+	xdotool key "Control_L+a"	sleep 0.1
 	data=$(xsel)
 
 	#notify-send 'Inside deepl'
@@ -71,6 +70,11 @@ else
 
 	# Open DeepL
 	xdotool key $deepl_call_hotkey
+
+	# Insert from clipboard
+#	sleep 0.1
+	xdotool key "Control_L+A"
+#	xdotool key "Control_L+V"
 fi
 
 # back to layout
