@@ -1,3 +1,8 @@
+Version
+-------
+Used `Deepl-Linux-Electron.AppImage` version is v1.4.3
+
+
 Base info
 ---------
 
